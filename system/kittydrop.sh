@@ -18,6 +18,7 @@ else # toggle show/hide terminal emulator
 			xdotool windowunmap --sync $wid
 		else # window is visible but not on top; raise it 
 			xdotool windowraise $wid
+			xdotool windowfocus --sync $wid
 		fi
 	else # window is not visible (unmapped); map it (also raises it) 
 		xdotool windowmap --sync $wid
