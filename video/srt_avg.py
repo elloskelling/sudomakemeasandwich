@@ -12,6 +12,7 @@ def main():
           build_time(0.5*(t1+t2))
       except:
           print("Error averaging timestamps")
+          sys.exit(10)
 
 def parse_time(time):
   hour, minute, second = time.split(':')
